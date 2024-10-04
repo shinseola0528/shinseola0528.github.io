@@ -1,9 +1,12 @@
 # main links
 main:
+  - title: "search"
+    url: /search/
   - title: "Category"
     url: /categories/
   - title: "tag"
     url: /tags/
+
   # - title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
@@ -14,3 +17,10 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+docs:
+  - title: "대목차"
+    children: 
+    - title: "Category"
+      url: /categories/
+    - title: "Tag"
+      url: /tags/
