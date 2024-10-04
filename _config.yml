@@ -113,51 +113,52 @@ analytics:
 # Site Author
 author:
   name             : "신설아"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : 
+  avatar           : /assets/images/baggage.jpg  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "하루하루 살아가는 개발자"
   location         : "South Korea"
   email            : # "shinseola0528@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      #url: "mailto:shinseola0528@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "mailto:shinseola0528@gmail.com"
+    # - label: "Website"
+    #   icon: "fas fa-fw fa-link"
+    #   # url: "https://your-website.com"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   # url: "https://twitter.com/"
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/shinseola0528"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      url: "https://instagram.com/seola.0528"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
+      url: "https://github.com/shinseola0528"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/seola.0528"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   # url:
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   # url:
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   # url:
+    # - label: "Bitbucket"
+    #   icon: "fab fa-fw fa-bitbucket"
+    #   # url:
+
 
 
 # Reading Files
@@ -289,16 +290,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 
 # HTML Compression
