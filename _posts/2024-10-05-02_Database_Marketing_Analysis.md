@@ -11,11 +11,9 @@ sidebar:
 
 <br/>
 
-<br/>
-
 ### 1. 데이터베이스(Database) 시장에 영향을 미친 이슈
 
- ![image-20241005005743791](../images/2024-10-05-dbms_market_analysis/image-20241005005743791.png)
+![image01](../../images/2024-10-05-02_Database_Marketing_Analysis/image01.png)
 
 <br/>
 
@@ -58,9 +56,7 @@ sidebar:
 
 ### 2. ORDB Products
 
- ![image-20241005011318272](../images/2024-10-05-dbms_market_analysis/image-20241005011318272.png)
-
-
+![image02](../../images/2024-10-05-02_Database_Marketing_Analysis/image02.png)
 
 - **Oracle Database**: 오라클에서 개발한 객체 관계형 데이터베이스 관리 시스템입니다.
 - **IBM DB2**: IBM에서 개발한 객체 관계형 데이터베이스 관리 시스템입니다.
@@ -72,32 +68,26 @@ sidebar:
 
 ### 3. Database Type(인기순)
 
-![image-20241005011919643](../images/2024-10-05-dbms_market_analysis/image-20241005011919643.png)
+![image03](../../images/2024-10-05-02_Database_Marketing_Analysis/image03.png)
 
 #### 1. **관계형 데이터베이스 (RDBMS)**
 
  가장 일반적인 데이터베이스 유형입니다. 테이블 형식으로 데이터를 저장하고 관리합니다.
 
-<br/>
-
 #### 2. NoSQL 데이터베이스
 
  비정형화된 데이터, 대규모 데이터, 고성능 데이터 처리 등에 특화된 데이터베이스입니다 .
-
-<br/>
 
 #### 3.**객체 관계형 데이터베이스 (ORDB)**
 
  객제 지향 프로그래밍 개념을 데이터베이스 관리에 적용한 시스템입니다.
 
-<br/>
-
 #### 4. XML 데이터베이스 
 
 XML 문서를 저장하고 관리하는 데이터베이스입니다.
 
-<br/>
-
 #### 5. 그래프 데이터베이스
 
  그래프 형식으로 데이터를 저장하고 관리하는 데이터베이스입니다 .
+
+<br/>
