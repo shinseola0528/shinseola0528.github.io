@@ -5,5 +5,30 @@ search: false
 
 @charset "utf-8";
 
+@import url("https://cdn.jsdelivr.net/gh/joungkyun/font-d2coding/d2coding.css"); // D2Coding 웹폰트
+@font-face {
+  font-family: "Cica";
+  src: url("/assets/fonts/Cica.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* 본문용 폰트 */
+body,
+p,
+li {
+  font-family: "Noto Sans", "Noto Sans JP", "Spoqa Han Sans Neo", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* 코드용 폰트 */
+code,
+pre {
+  font-family: "Cica", "D2Coding", monospace;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
