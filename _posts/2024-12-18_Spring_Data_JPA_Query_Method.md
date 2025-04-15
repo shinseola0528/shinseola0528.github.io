@@ -2,7 +2,7 @@
 layout: single
 title: "Spring Data JPA 쿼리 메소드 정리"
 categories: Spring
-tag: [Java, DB, Spring]
+tag: [Java, Spring, DB, JPA]
 toc: true
 author_profile: false
 sidebar:
