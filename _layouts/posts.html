@@ -4,27 +4,54 @@ layout: archive
 
 {{ content }}
 
+<!-- ✅ 댓글 영역 -->
+<hr>
+<div id="giscus_container"></div>
+
+<script>
+  const giscus = document.createElement('script');
+  giscus.src = 'https://giscus.app/client.js';
+  giscus.setAttribute('data-repo', 'shinseola0528/shinseola0528.github.io');
+  giscus.setAttribute('data-repo-id', 'R_kgDOMAAgNg');
+  giscus.setAttribute('data-category', 'General');
+  giscus.setAttribute('data-category-id', 'DIC_kwDOMAAgNs4CpQjB');
+  giscus.setAttribute('data-mapping', 'pathname');
+  giscus.setAttribute('data-strict', '0');
+  giscus.setAttribute('data-reactions-enabled', '1');
+  giscus.setAttribute('data-emit-metadata', '0');
+  giscus.setAttribute('data-input-position', 'bottom');
+  giscus.setAttribute('data-theme', 'preferred_color_scheme');
+  giscus.setAttribute('data-lang', 'ko');
+  giscus.crossOrigin = 'anonymous';
+  giscus.async = true;
+
+  document.getElementById('giscus_container').appendChild(giscus);
+</script>
+
 <ul class="taxonomy__index">
-  {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% assign postsInYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date |
+  date: "%Y"' %}
   {% for year in postsInYear %}
-    <li>
-      <a href="#{{ year.name }}">
-        <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
-      </a>
-    </li>
+  <li>
+    <a href="#{{ year.name }}">
+      <strong>{{ year.name }}</strong> <span class="taxonomy__count">{{ year.items | size }}</span>
+    </a>
+  </li>
   {% endfor %}
 </ul>
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+{% assign postsByYear = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date:
+"%Y"' %}
 {% for year in postsByYear %}
-  <section id="{{ year.name }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ year.name }}</h2>
-    <div class="entries-{{ entries_layout }}">
-      {% for post in year.items %}
-        {% include archive-single.html type=entries_layout %}
-      {% endfor %}
-    </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
-  </section>
+<section id="{{ year.name }}" class="taxonomy__section">
+  <h2 class="archive__subtitle">{{ year.name }}</h2>
+  <div class="entries-{{ entries_layout }}">
+    {% for post in year.items %}
+    {% include archive-single.html type=entries_layout %}
+    {% endfor %}
+  </div>
+  <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }}
+    &uarr;</a>
+</section>
 {% endfor %}
