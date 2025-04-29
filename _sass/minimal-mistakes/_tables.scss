@@ -2,38 +2,63 @@
    TABLES
    ========================================================================== */
 
+// table {
+//   display: block;
+//   margin-bottom: 1em;
+//   width: 100%;
+//   font-family: $global-font-family;
+//   font-size: $type-size-6;
+//   border-collapse: collapse;
+//   overflow-x: auto;
+
+//   & + table {
+//     margin-top: 1em;
+//   }
+// }
+
+// thead {
+//   background-color: $border-color;
+//   border-bottom: 2px solid mix(#000, $border-color, 25%);
+// }
+
+// th {
+//   padding: 0.5em;
+//   font-weight: bold;
+//   text-align: left;
+// }
+
+// td {
+//   padding: 0.5em;
+
+//   border-bottom: 1px solid mix(#000, $border-color, 25%);
+// }
+
+// tr,
+// td,
+// th {
+//   vertical-align: middle;
+// }
+
+/* ===== Customized Table Styles for Full Width & Borders ===== */
+/* 수정된 테이블 스타일 */
 table {
-  display: block;
-  margin-bottom: 1em;
   width: 100%;
-  font-family: $global-font-family;
-  font-size: $type-size-6;
   border-collapse: collapse;
-  overflow-x: auto;
-
-  & + table {
-    margin-top: 1em;
-  }
-}
-
-thead {
-  background-color: $border-color;
-  border-bottom: 2px solid mix(#000, $border-color, 25%);
-}
-
-th {
-  padding: 0.5em;
-  font-weight: bold;
-  text-align: left;
+  margin-bottom: 1em;
 }
 
 td {
-  padding: 0.5em;
-  border-bottom: 1px solid mix(#000, $border-color, 25%);
+  border: 1px solid #ddd; /* 각 열마다 줄 */
+  padding: 4px 8px; /* 위아래 4px, 좌우 8px */
+  text-align: center; /* 가로 가운데 정렬 */
+  vertical-align: middle; /* 세로 가운데 정렬 */
 }
 
-tr,
-td,
 th {
-  vertical-align: middle;
+  border: 1px solid #ddd; /* 헤더에도 테두리 */
+  padding: 4px 8px; /* 헤더 패딩 조정 */
+  text-align: center; /* 가로 가운데 정렬 */
+  vertical-align: middle; /* 세로 가운데 정렬 */
+  background-color: #f2f2f2;
+  font-weight: 600;
 }
