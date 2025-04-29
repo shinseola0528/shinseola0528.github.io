@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Docker 기초 02] Docker 컨테이너 구조 및 커맨드 사용법 - 이론편"
-date: 2025-04-29
+date: 2025-04-29 10:00:00 +0900
 categories:
   - Docker
 tags:

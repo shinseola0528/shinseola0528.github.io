@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[Docker 기초 01] 도커 기초 강의"
-date: 2025-04-29
+date: 2025-04-29 09:00:00 +0900
 categories: Docker
 tags:
   - Docker
@@ -15,6 +15,7 @@ sidebar:
 ---
 
 ### Docker 강의 영상
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/p1-wm-ThnTI" frameborder="0" allowfullscreen></iframe>
 
 <br>
@@ -39,7 +40,6 @@ sidebar:
 
 ![컨테이너 구조도](../../images/2025-04-29-docker-basic-01/docker-container-structure.png)
 
-
 - App A, App B, App C 등 여러 애플리케이션이 Docker를 통해 독립적으로 관리됩니다.
 - Docker는 Host 운영체제 위에 설치되며, 그 아래 인프라가 있습니다.
 
@@ -51,4 +51,3 @@ sidebar:
 - 설치 방법
   - **Docker Desktop** 설치 (Windows / Mac(Intel/Apple 칩) / Linux용 제공)
   - **Docker Hub** 가입 필요 (애플리케이션 이미지 저장 및 팀 협업)
-
